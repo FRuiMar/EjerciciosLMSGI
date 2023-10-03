@@ -21,7 +21,7 @@
   <!ATTLIST videoclub  nombre  CDATA #REQUIRED
                        direccion  CDATA #IMPLIED
                        telefono  CDATA #FIXED >
-  <!ATTLIST 
+  <!ATTLIST fsdfgsfd
 ]>
 
 <videoclub>
