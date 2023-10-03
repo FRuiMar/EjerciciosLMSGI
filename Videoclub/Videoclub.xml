@@ -1,47 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE videoclub [
-  <!ELEMENT videoclub (socios, peliculas)*>
+  <!ELEMENT videoclub (socios | peliculas | ofertas)* >
   <!ELEMENT socios (socio+)>
-  <!ELEMENT socio (numeroSocio, DNI, nombreSoc, tlf+)>
-  <!ELEMENT numeroSocio ANY>
+  <!ELEMENT socio (DNI, nombreSoc, tlf+)>
   <!ELEMENT DNI ANY>
   <!ELEMENT nombreSoc ANY>
   <!ELEMENT tlf ANY>
   <!ELEMENT peliculas (pelicula+)>
-  <!ELEMENT pelicula (nombrePel, anio, numEjemplar, director, novedad?, (alquilada | disponible))>
+  <!ELEMENT pelicula (nombrePel, anio, director, novedad?, (alquilada | disponible))>
   <!ELEMENT nombrePel (#PCDATA)>
   <!ELEMENT anio ANY>
-  <!ELEMENT numEjemplar (#PCDATA)>
   <!ELEMENT director (#PCDATA)>
   <!ELEMENT novedad EMPTY>
   <!ELEMENT alquilada EMPTY>
   <!ELEMENT disponible EMPTY>
+  <!ELEMENT oferta (#PCDATA | combo)*>
+  <!ELEMENT combo EMPTY>
+
 
 
   <!ATTLIST videoclub  nombre  CDATA #REQUIRED
                        direccion  CDATA #IMPLIED
-                       telefono  CDATA #FIXED >
-  <!ATTLIST fsdfgsfd
+                       telefono  CDATA #FIXED "957505050" >
+  <!ATTLIST pelicula codEjem ID #REQUIRED
+                     genero (accion | comedia | romance | terror | drama | SyFy ) "accion">
+  <!ATTLIST socio ID ID #REQUIRED>
+  <!ATTLIST alquilada ID IDREF #REQUIRED >
+  <!ATTLIST combo ID IDEREFS #IMPLIED >
+
 ]>
 
-<videoclub>
+
+<videoclub nombre = "Electronic" direccion = "calle meson 8" telefono = "957505050" >
   <socios>
-    <socio>
-      <numeroSocio>xxxxxx</numeroSocio>
-      <DNI>xxxxxx</DNI>
-      <nombreSoc>xxxxxxx</nombreSoc>
-      <tlf>xxxxxxx</tlf>
+    <socio ID = "e0473">
+      <DNI>50600700x</DNI>
+      <nombreSoc>Pepe Gutierrez</nombreSoc>
+      <tlf>+1 555 555624248</tlf>
     </socio>
   </socios>
   <peliculas>
-    <pelicula>
+    <pelicula codEjem = "EP03" genero = "drama">
       <nombrePel>El Padrino</nombrePel>
-      <anio>xxxxxxx</anio>
-      <numEjemplar>xxxxxxx</numEjemplar>
-      <director>xxxxxxx</director>
-      <alquilada/>
+      <anio>1972</anio>
+      <director>Francis Ford Coppola</director>
+      <alquilada ID = "e0473" />
     </pelicula>
   </peliculas>
-  
-  
+  <peliculas>
+    <pelicula codEjem = "VB02" genero = "comedia">
+      <nombrePel>La Vida de Brian</nombrePel>
+      <anio>1979</anio>
+      <director>Terry Jones</director>
+      <alquilada ID = "e0473" />
+    </pelicula>
+  </peliculas>
+  <oferta>
+    Llevate 2 x 1
+    <combo codEjem = "VB02 EP03"/>
+  </oferta>
 </videoclub>
