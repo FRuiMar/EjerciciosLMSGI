@@ -20,7 +20,7 @@
       <anio>1972</anio>
       <director>Francis Ford Coppola</director>
       <alquilada ID = "e0473" />
-      <coste %precio/>
+      <coste precio="4€/día"/>
     </pelicula>
   </peliculas>
   <peliculas>
@@ -29,21 +29,21 @@
       <anio>1979</anio>
       <director>Terry Jones</director>
       <disponible/>
-      <coste %precio/>
+      <coste precio="4€/día"/>
     </pelicula>
     <pelicula codEjem = "VB002" genero = "comedia">
       <nombrePel>La Vida de Brian</nombrePel>
       <anio>1979</anio>
       <director>Terry Jones</director>
       <alquilada ID = "e0097" />
-      <coste %precio/>
+      <coste precio="4€/día"/>
     </pelicula>
     <pelicula codEjem = "CM002" genero = "acción">
       <nombrePel>Los Caballeros de la Mesa Cuadrada</nombrePel>
       <anio>1975</anio>
       <director>Terry Jones, Terry Gilliam</director>
       <disponible/>
-      <coste %precio/>
+      <coste precio="4€/día"/>
     </pelicula>
     <pelicula codEjem = "DP104" genero = "acción">
       <nombrePel>Deadpool 1</nombrePel>
@@ -51,7 +51,7 @@
       <director>David Leitch</director>
       <disponible/>
       <novedad />
-      <coste %precio/>
+      <coste precio="4€/día"/>
     </pelicula>
     <pelicula codEjem = "DP201" genero = "acción">
       <nombrePel>Deadpool 2</nombrePel>
@@ -59,7 +59,7 @@
       <director>David Leitch</director>
       <disponible/>
       <novedad />
-      <coste %precio/>
+      <coste precio="4€/día"/>
     </pelicula>
   </peliculas>
   <ofertas>

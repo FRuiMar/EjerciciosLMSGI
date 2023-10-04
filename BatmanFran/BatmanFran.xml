@@ -14,14 +14,12 @@
             <edad>32
                 <fechaNacimiento>3/10/91</fechaNacimiento>
             </edad>
-            </edad>
             <villano/>
         </personaje>
         <personaje nombre = "joker" codigo="jok" altura="190"> 
             <nombreReal>Mafiosillo</nombreReal>
             <edad>57
                 <fechaNacimiento>3/10/66</fechaNacimiento>
-            </edad>
             </edad>
             <villano/>
         </personaje>
