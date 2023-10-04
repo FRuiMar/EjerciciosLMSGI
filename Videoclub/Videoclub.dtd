@@ -28,4 +28,4 @@
 <!ENTITY oferLunes "Lunes de MontyPython">
 <!ENTITY oferMierc "Especial DeadPool">
 <!ENTITY % precio "4€/día CDATA IMPLIED">
-<!ATTLIST coste precio %precio; >
+<!ATTLIST coste  %precio "coste CDATA #IMPLIED">
