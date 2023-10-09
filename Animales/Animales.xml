@@ -3,14 +3,13 @@
 <zoologico nombre="Bioparc" ciudad="Fuengirola" webVentaEntradas="www.entradas.com"
 empresaTransporte="Autocares Pérez">
     <zona nombre="desierto"> Me encanta porque está nueva, amplia y muy bien cuidada
-        <numeroRecientos>10</numeroRecientos>
+        <numeroRecintos>10</numeroRecintos>
     </zona>
     <zona nombre="ártico">Corresponde a &bioparc;</zona>
     <animal zona="desierto">
         <nombre>Piquipiqui</nombre>
         <especie>Reina Cobra</especie>
         <terrestre/>
-
     </animal>
-    <espectaculo nombre="aves" zonas="desierto ártico"/>
+    <espectaculo nombre="aves" zona="desierto ártico"/>
 </zoologico>

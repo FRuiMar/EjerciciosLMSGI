@@ -1,4 +1,5 @@
 <!ELEMENT zoologico (zona+, animal*, espectaculo?)>
+<!ELEMENT espectaculo (#PCDATA)>
 <!ELEMENT zona (#PCDATA | numeroRecintos)*>
 <!ELEMENT animal (nombre, especie, ( terrestre | acuatico))>
 <!ELEMENT nombre (#PCDATA)>
