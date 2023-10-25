@@ -4,5 +4,5 @@ xsi:noNamespaceSchemaLocation="Crepusculo.xsd">
   un montón de Vampiros brillantes y hombres lobos sobrehormonados.
   <personaje nombre = "Bella" />
   <personaje nombre = "Vampirillo1" />
-  <actor nombre = ""/>
+  <actor nombre = ""/>f
 </pelicula>
