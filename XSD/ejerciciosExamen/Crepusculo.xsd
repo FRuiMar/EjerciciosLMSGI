@@ -9,8 +9,7 @@
     </xs:sequence>
   </xs:complexType>  
 
-  <xs:complexType name="datosPersonaje">
-  </xs:complexType>
+  <xs:complexType name="datosPersonaje"></xs:complexType>
 
   <xs:complexType name="datosActor"></xs:complexType>
 
